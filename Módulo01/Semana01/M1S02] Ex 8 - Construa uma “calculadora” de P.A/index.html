@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1S02] Ex 8 - Construa uma “calculadora” de P.A</title>
+</head>
+
+<body>
+    <script>
+        let valorInicial = parseFloat(prompt("Digite o primeiro número"));
+
+        let raiz = prompt("Digite o valor da raiz:");
+
+        let res = valorInicial;
+
+        let progression = "";
+
+        for (i = 0; i < 10; i++) {
+            progression += res + ", ";
+
+            res = res + raiz;
+        }
+
+        progression = progression.slice(0, -2);
+
+        prompt(`Os 10 primeiros valores são: ${progression}`);
+
+    </script>
+</body>
+
+</html>
