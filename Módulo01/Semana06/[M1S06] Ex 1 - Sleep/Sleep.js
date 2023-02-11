@@ -9,4 +9,6 @@ function sleep ( valor ) {
        },3000)
     })
   }
+
+  sleep('teste').then((res) => console.log(res))
   
